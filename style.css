@@ -515,12 +515,7 @@ li {
   }
 
   .about-visual {
-    position: relative;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    padding: 20px;
+    display: none;
   }
 
   .about-img {
@@ -540,7 +535,6 @@ li {
     left: auto;
     bottom: auto;
   }
-
   .contact-container {
     margin: 20px;
     padding: 16px;
@@ -594,5 +588,3 @@ li {
     text-align: center;
   }
 }
-
-
