@@ -579,5 +579,20 @@ li {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  .footer-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
 }
+
 
