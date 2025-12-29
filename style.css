@@ -495,23 +495,39 @@ li {
     padding: 0 16px;
   }
 
+  .about-section {
+    min-height: auto;
+    padding: 40px 0;
+  }
+
   .about-container {
     grid-template-columns: 1fr;
   }
 
-  .about-visual {
-    height: auto;
-    display: flex;
+  .about-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .about-visual {
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
     padding: 20px;
   }
 
   .about-img {
     position: relative;
-    width: 48%;
-    transform: none;
+    width: 100%;
     opacity: 1;
+    transform: none;
   }
 
   .img-1,
@@ -521,6 +537,8 @@ li {
   .img-5 {
     top: auto;
     right: auto;
+    left: auto;
+    bottom: auto;
   }
 
   .contact-container {
@@ -562,3 +580,4 @@ li {
     gap: 20px;
   }
 }
+
