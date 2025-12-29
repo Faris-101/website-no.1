@@ -122,6 +122,13 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  color: #f9fafb;
+  cursor: pointer;
+}
+
 .hero-content {
   width: 70%;
   margin: auto;
@@ -418,4 +425,140 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+}
+
+/* tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    height: 420px;
+  }
+
+  .about-img {
+    width: 200px;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .img-3 {
+    right: 200px;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+    margin: 32px;
+  }
+
+  .contact-img {
+    height: 400px;
+  }
+}
+
+/* hp */
+@media (max-width: 768px) {
+  .header-glass {
+    padding: 14px 20px;
+    width: calc(100% - 20px);
+  }
+
+  .navbar {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 16px;
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .authentication-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-content {
+    width: 90%;
+    padding: 0 16px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .about-img {
+    position: relative;
+    width: 48%;
+    transform: none;
+    opacity: 1;
+  }
+
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4,
+  .img-5 {
+    top: auto;
+    right: auto;
+  }
+
+  .contact-container {
+    margin: 20px;
+    padding: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content {
+    height: auto;
+    padding: 32px 20px;
+  }
+
+  .contact-content h1 {
+    font-size: 32px;
+  }
+
+  .option-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .data-user {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .massage {
+    margin-bottom: 32px;
+  }
+
+  .contact-img {
+    height: 280px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
